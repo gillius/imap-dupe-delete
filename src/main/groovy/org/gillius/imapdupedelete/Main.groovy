@@ -51,7 +51,11 @@ class Main {
 					assert false
 			}
 		} finally {
-			mail.close()
+			try {
+				mail.close()
+			} catch (Exception ignored) {
+				//don't mask the original exception
+			}
 		}
 	}
 }

@@ -129,7 +129,7 @@ class ImapDupeDelete {
 	}
 
 	public void close() {
-		store.close()
+		store?.close()
 		session = null
 		store = null
 		folders = null
