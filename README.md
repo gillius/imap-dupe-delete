@@ -17,6 +17,9 @@ messages between folders, for some messages I get 2 or 3 duplicates of each. I h
 why or when this occurs, but it has each time I've done this (a few times). I wrote this program to
 clean up the mess.
 
+The program itself is written in Groovy, and uses Maven (with the
+[GMavenPlus plugin](https://github.com/groovy/GMavenPlus)).
+
 Usage
 -----
 
@@ -52,8 +55,11 @@ mvn clean compile exec:java -Dexec.args="imaps mailhost.example.com johndoe pass
 Other Uses
 ----------
 
-This application is a pretty simple example of JavaMail usage. Since it iterates folders and
-scans messages, it could be altered to delete or find messages based on any criteria you can code.
+This application is a pretty simple example of JavaMail usage from the Groovy language. It's also a
+good example of a simple Groovy program built with Maven using
+[GMavenPlus](https://github.com/groovy/GMavenPlus) with JDK 1.7 and invokedynamic enabled. Since it
+iterates folders and scans messages, it could be altered to delete or find messages based on any
+criteria you can code.
 
 License
 -------
